@@ -7,21 +7,24 @@ export default function HomeTestimonials() {
       name: "Anonymous",
       feedback:
         "Working with Gimmick Marketers was a game-changer for our brand. Their creative approach and strategic insights took our campaign to new heights. The results exceeded our expectations, and the collaboration was seamless. Looking forward to more success together!",
-      image: "/assets/influencers/I1.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 2,
       name: "Atiksha Rathi, Influencer",
       feedback:
         "Gimmick Marketers stands out in the crowded influencer marketing space. Their team is not just about promotions; they understand the essence of our brand and craft campaigns that truly resonate. It’s a pleasure collaborating with such a dedicated and creative team.",
-      image: "/assets/influencers/I1.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 3,
       name: "Anonymous",
       feedback:
         "We’ve partnered with several agencies, but Gimmick Marketers brought a fresh perspective to our campaigns. Their attention to detail and commitment to results set them apart. The impact on our audience was immediate, and we’ve seen sustained growth. Highly recommended!",
-      image: "/assets/influencers/I1.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
   ];
 
