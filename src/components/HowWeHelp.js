@@ -6,35 +6,40 @@ export default function HowWeHelp() {
       title: "Influencer Marketing",
       description:
         "Leverage the power of authentic voices to amplify your brand.",
-      icon: "https://imgs.search.brave.com/j8lMsQbIap7p083VODSIAC0AXo53ZDJCcvvPnYoM9Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTc4OTA1Mi9waG90/by95b3VuZy13b21h/bi13b3JraW5nLWF0/LWhvbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU5haFdG/ZXB6R0x4bk9QSWVI/MnF2Um9UODB1OFhu/UER4N2tUWDlQWDk3/TlU9",
+
+      icon: "/assets/Influencers/I1.jpg",
     },
     {
       title: "Content Creation",
       description:
         "Deliver engaging and memorable content tailored for your audience.",
-      icon: "https://imgs.search.brave.com/j8lMsQbIap7p083VODSIAC0AXo53ZDJCcvvPnYoM9Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTc4OTA1Mi9waG90/by95b3VuZy13b21h/bi13b3JraW5nLWF0/LWhvbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU5haFdG/ZXB6R0x4bk9QSWVI/MnF2Um9UODB1OFhu/UER4N2tUWDlQWDk3/TlU9",
+
+      icon: "/assets/Influencers/I1.jpg",
     },
     {
       title: "Meme Marketing",
       description:
         "Infuse humor into your campaigns and spark viral connections.",
-      icon: "https://imgs.search.brave.com/j8lMsQbIap7p083VODSIAC0AXo53ZDJCcvvPnYoM9Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTc4OTA1Mi9waG90/by95b3VuZy13b21h/bi13b3JraW5nLWF0/LWhvbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU5haFdG/ZXB6R0x4bk9QSWVI/MnF2Um9UODB1OFhu/UER4N2tUWDlQWDk3/TlU9",
+
+      icon: "/assets/Influencers/I1.jpg",
     },
     {
       title: "Digital Campaigns",
       description: "Run high-impact campaigns to maximize visibility and ROI.",
-      icon: "https://imgs.search.brave.com/j8lMsQbIap7p083VODSIAC0AXo53ZDJCcvvPnYoM9Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTc4OTA1Mi9waG90/by95b3VuZy13b21h/bi13b3JraW5nLWF0/LWhvbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU5haFdG/ZXB6R0x4bk9QSWVI/MnF2Um9UODB1OFhu/UER4N2tUWDlQWDk3/TlU9",
+
+      icon: "/assets/Influencers/I1.jpg",
     },
     {
       title: "Celebrity Collaborations",
       description:
         "Boost your credibility with endorsements from household names.",
-      icon: "https://imgs.search.brave.com/j8lMsQbIap7p083VODSIAC0AXo53ZDJCcvvPnYoM9Zw/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvMTAz/NTc4OTA1Mi9waG90/by95b3VuZy13b21h/bi13b3JraW5nLWF0/LWhvbWUuanBnP3M9/NjEyeDYxMiZ3PTAm/az0yMCZjPU5haFdG/ZXB6R0x4bk9QSWVI/MnF2Um9UODB1OFhu/UER4N2tUWDlQWDk3/TlU9",
+
+      icon: "/assets/Influencers/I1.jpg",
     },
   ];
 
   return (
-    <div className=' lg:h-screen lg:grid lg:grid-cols-2 bg-gradient-to-b from-purple-200 via-purple-300 to-purple-400'>
+    <div className=' lg:h-screen lg:grid lg:grid-cols-2 bg-gradient-to-b from-purple-200 via-purple-200 to-purple-300'>
       <h1 className='pt-20 lg:pt-0 max-w-[95%] order-2 font-lato text-center text-4xl lg:text-6xl font-extrabold text-white my-auto'>
         How can <span className='text-green-700'>Gimmick</span> provide
         assistance and{" "}

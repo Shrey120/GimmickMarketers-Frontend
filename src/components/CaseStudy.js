@@ -4,17 +4,20 @@ export default function CaseStudy() {
   const caseStudies = [
     {
       id: 1,
-      image: "/assets/case-study1.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
       title: "X company Live Marketing Campaign",
     },
     {
       id: 2,
-      image: "/assets/case-study2.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
       title: "Y company Live Marketing Campaign",
     },
     {
       id: 3,
-      image: "/assets/sam.png",
+
+      image: "/assets/Influencers/I1.jpg",
       title: "Z company Live Marketing Campaign",
     },
   ];
@@ -41,7 +44,7 @@ export default function CaseStudy() {
             <img
               src={caseStudy.image}
               alt={caseStudy.title}
-              className='w-[95%] rounded-xl h-80 bg-white mt-3'
+              className='w-[95%] object-cover rounded-xl h-80 bg-white mt-3'
             />
             <div className='p-4 flex flex-col '>
               <h3 className='font-julius text-lg font-extrabold mb-2'>

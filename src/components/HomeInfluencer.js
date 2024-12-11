@@ -6,25 +6,29 @@ export default function HomeInfluencer() {
       id: 1,
       name: "Influencer 1",
       genre: "Fashion",
-      image: "/assets/influencer1.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 2,
       name: "Influencer 2",
       genre: "Travel",
-      image: "/assets/influencer2.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 3,
       name: "Influencer 3",
       genre: "Tech",
-      image: "/assets/influencer3.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 4,
       name: "Influencer 4",
       genre: "Fitness",
-      image: "/assets/influencer4.jpg",
+
+      image: "/assets/Influencers/I1.jpg",
     },
     {
       id: 5,
@@ -32,7 +36,12 @@ export default function HomeInfluencer() {
       genre: "Food",
       image: "/assets/Influencers/I1.jpg",
     },
-    { id: 6, name: "Influencer 6", genre: "Music", image: "/assets/sam.png" },
+    {
+      id: 6,
+      name: "Influencer 6",
+      genre: "Music",
+      image: "/assets/Influencers/I1.jpg",
+    },
   ];
 
   return (
