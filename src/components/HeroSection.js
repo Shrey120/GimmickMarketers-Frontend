@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -17,9 +18,16 @@ export default function HeroSection() {
           and influencers to connect authentically in the digital space.
         </div>
         <div className='flex justify-between mt-7 gap-4 w-full '>
-          <button className='button'>I'm a brand</button>
-
-          <button className='button'>I'm a creator</button>
+          <Link
+            className='w-full'
+            to='brandsRegister'>
+            <button className='button'>I'm a brand</button>
+          </Link>
+          <Link
+            className='w-full'
+            to='influencerRegister'>
+            <button className='button'>I'm a creator</button>
+          </Link>
         </div>
       </div>
 
