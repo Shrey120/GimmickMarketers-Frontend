@@ -6,6 +6,7 @@ import HowWeHelp from "../components/HowWeHelp";
 import CaseStudy from "../components/CaseStudy";
 import HomeInfluencer from "../components/HomeInfluencer";
 import HomeTestimonials from "../components/HomeTestimonials";
+import HomeFeatures from "../components/HomeFeatures";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
       <WhyUs />
       <HowWeHelp />
       <CaseStudy />
+      <HomeFeatures />
       <HomeInfluencer />
       <HomeTestimonials />
     </section>

@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import BrandRegistration from "./pages/BrandsRegister";
+import InfluencerRegistration from "./pages/InfluencerRegister";
 
 function App() {
   return (
@@ -25,6 +26,10 @@ function App() {
           <Route
             path='/brandsRegister'
             element={<BrandRegistration />}
+          />
+          <Route
+            path='/influencerRegister'
+            element={<InfluencerRegistration />}
           />
         </Routes>
       </Router>
