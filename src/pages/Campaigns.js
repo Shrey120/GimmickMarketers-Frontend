@@ -27,7 +27,7 @@ const CampaignsPage = () => {
   }, []);
 
   return (
-    <div className='pt-28 bg-gradient-to-br from-purple-100 via-white to-green-100 pb-16 px-16'>
+    <div className='md:pt-28 pt-40 bg-gradient-to-br from-purple-100 via-white to-green-100 pb-16 px-16'>
       <div className='max-w-7xl mx-auto'>
         {campaigns.length === 0 ? (
           <div className='flex pt-40 text-center w-full h-screen'>
@@ -37,7 +37,7 @@ const CampaignsPage = () => {
           </div>
         ) : (
           <div>
-            <div className='font-lato text-4xl md:text-6xl mb-10 md:mb-20 text-center font-bold'>
+            <div className='font-lato text-4xl md:text-6xl mb-10 md:mb-20 text-center font-extrabold'>
               Campaigns
             </div>
             <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8'>
