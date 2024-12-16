@@ -1,9 +1,9 @@
 import React from "react";
-import HeroSection from "../components/HeroSection";
-import Brands from "../components/Brands";
-import WhyUs from "../components/WhyUs";
-import HowWeHelp from "../components/HowWeHelp";
-import CaseStudy from "../components/CaseStudy";
+import HomeHeroSection from "../components/HomeHeroSection";
+import HomeBrands from "../components/HomeBrands";
+import HomeWhyUs from "../components/HomeWhyUs";
+import HomeHowWeHelp from "../components/HomeHowWeHelp";
+import HomeCaseStudy from "../components/HomeCaseStudy";
 import HomeInfluencer from "../components/HomeInfluencer";
 import HomeTestimonials from "../components/HomeTestimonials";
 import HomeFeatures from "../components/HomeFeatures";
@@ -11,11 +11,11 @@ import HomeFeatures from "../components/HomeFeatures";
 export default function Home() {
   return (
     <section>
-      <HeroSection />
-      <Brands />
-      <WhyUs />
-      <HowWeHelp />
-      <CaseStudy />
+      <HomeHeroSection />
+      <HomeBrands />
+      <HomeWhyUs />
+      <HomeHowWeHelp />
+      <HomeCaseStudy />
       <HomeFeatures />
       <HomeInfluencer />
       <HomeTestimonials />

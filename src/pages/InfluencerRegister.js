@@ -50,7 +50,7 @@ export default function BrandContact() {
   };
 
   return (
-    <section className='min-h-screen py-12 px-6 lg:px-16 mt-10 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white'>
+    <section className='min-h-screen pb-12 px-6 lg:px-16 pt-28 md:pt-40 bg-gradient-to-br from-gray-800 via-gray-900 to-black text-white'>
       <div className='max-w-4xl mx-auto bg-gray-900/50 backdrop-blur-md p-10 rounded-xl shadow-4xl'>
         <h2 className='text-4xl font-bold text-center mb-10 bg-clip-text text-transparent bg-gradient-to-r from-teal-400 to-blue-500'>
           Your Voice, Their Brand – Let’s Create Together!

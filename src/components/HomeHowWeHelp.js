@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function HowWeHelp() {
+export default function HomeHowWeHelp() {
   const services = [
     {
       title: "Influencer Marketing",

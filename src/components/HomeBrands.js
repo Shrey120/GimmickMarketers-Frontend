@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function Brands() {
+export default function HomeBrands() {
   return (
     <div className='flex flex-col items-center overflow-hidden bg-purple-100 from-purple-800 via-purple-900 to-purple-950'>
       {/* <h1 className='text-white pb-10 font-semibold font-elecro text-xl'>

@@ -7,6 +7,11 @@ import Header from "./shared/Header";
 import Footer from "./shared/Footer";
 import BrandRegistration from "./pages/BrandsRegister";
 import InfluencerRegistration from "./pages/InfluencerRegister";
+import CaseStudies from "./pages/CaseStudy";
+import Services from "./pages/Services";
+import AboutUs from "./pages/AboutUs";
+import CampaignsPage from "./pages/Campaigns";
+import InfluencerPage from "./pages/Influencers";
 
 function App() {
   return (
@@ -14,10 +19,8 @@ function App() {
       {/* Toastify Notifications */}
       <ToastContainer position='top-center' />
 
-      <div className='p-6'>
-        <Header />
-      </div>
       <Router>
+        <Header />
         <Routes>
           <Route
             path='/'
@@ -30,6 +33,26 @@ function App() {
           <Route
             path='/influencerRegister'
             element={<InfluencerRegistration />}
+          />
+          <Route
+            path='/caseStudies'
+            element={<CaseStudies />}
+          />
+          <Route
+            path='/services'
+            element={<Services />}
+          />
+          <Route
+            path='/about'
+            element={<AboutUs />}
+          />
+          <Route
+            path='/campaigns'
+            element={<CampaignsPage />}
+          />
+          <Route
+            path='/influencers'
+            element={<InfluencerPage />}
           />
         </Routes>
       </Router>

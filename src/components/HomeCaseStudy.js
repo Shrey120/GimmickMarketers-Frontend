@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function CaseStudy() {
+export default function HomeCaseStudy() {
   const caseStudies = [
     {
       id: 1,
@@ -30,9 +31,11 @@ export default function CaseStudy() {
           <span className='text-red-600'>Transformative Campaigns</span> by
           India’s Top Influencer Marketing Agency
         </h2>
-        <button className='mt-5 w-full lg:w-fit font-lato text-sm lg:text-base font-bold border-2 border-black px-6 py-2 rounded-full hover:scale-105 hover:border-0 hover:text-white hover:bg-black text-black '>
-          View All
-        </button>
+        <Link to='caseStudies'>
+          <button className='mt-5 w-full lg:w-fit font-lato text-sm lg:text-base font-bold border-2 border-black px-6 py-2 rounded-full hover:scale-105 hover:border-0 hover:text-white hover:bg-black text-black '>
+            View All
+          </button>
+        </Link>
       </div>
 
       {/* Case Studies Grid */}

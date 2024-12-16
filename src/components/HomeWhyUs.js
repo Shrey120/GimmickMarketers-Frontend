@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function WhyUs() {
+export default function HomeWhyUs() {
   return (
     <div className='bg-gradient-to-b from-white via-purple-100 to-purple-200 py-16 px-8'>
       <div className='container mx-auto'>

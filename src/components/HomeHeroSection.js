@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
-    <div className='pb-32 md:py-40 grid grid-cols-1 lg:grid-cols-2 p-20 mt-20'>
+    <div className='pb-32 md:pb-40 grid grid-cols-1 lg:grid-cols-2 px-20 pt-28 md:pt-40'>
       <div>
         <div className='font-space text-4xl lg:text-7xl font-extrabold'>
           <span className='hero-text hero-text-md'>

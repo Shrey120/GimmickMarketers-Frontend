@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function HomeInfluencer() {
   const influencers = [
@@ -45,15 +46,17 @@ export default function HomeInfluencer() {
   ];
 
   return (
-    <section className='py-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-purple-50 via-purple-100 to-green-100'>
+    <section className='pt-28 md:pt-40 pb-20 px-4 md:px-8 lg:px-16 bg-gradient-to-b from-purple-50 via-purple-100 to-green-100'>
       <div className='lg:flex lg:justify-between items-center mb-8'>
         <h2 className='text-black lg:w-[80%] font-lato text-4xl lg:text-6xl font-extrabold'>
           <span className='text-red-600'>Top Influencers and Creators</span>{" "}
           Shaping Modern Branding and Storytelling
         </h2>
-        <button className='mt-5 w-full lg:w-fit font-lato text-sm lg:text-base font-bold border-2 border-black px-6 py-2 rounded-full hover:scale-105 hover:border-0 hover:text-white hover:bg-black text-black'>
-          View All
-        </button>
+        <Link to='influencers'>
+          <button className='mt-5 w-full lg:w-fit font-lato text-sm lg:text-base font-bold border-2 border-black px-6 py-2 rounded-full hover:scale-105 hover:border-0 hover:text-white hover:bg-black text-black'>
+            View All
+          </button>
+        </Link>
       </div>
       <div className='grid grid-cols-1 sm:grid-cols-3 gap-7 p-10'>
         {influencers.map((influencer) => (

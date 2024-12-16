@@ -1,10 +1,5 @@
 import React from "react";
-import {
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -40,16 +35,16 @@ export default function Footer() {
             </li>
             <li>
               <a
-                href='/case-studies'
+                href='/caseStudies'
                 className='text-sm text-gray-400 hover:text-green-500'>
                 Case Studies
               </a>
             </li>
             <li>
               <a
-                href='/contact'
+                href='/influencers'
                 className='text-sm text-gray-400 hover:text-green-500'>
-                Contact
+                Influencer Details
               </a>
             </li>
           </ul>
@@ -68,9 +63,6 @@ export default function Footer() {
               </a>
             </li>
             <li className='text-sm text-gray-400'>Phone: +1 234 567 890</li>
-            <li className='text-sm text-gray-400'>
-              Address: 123 Marketing Blvd, NY
-            </li>
           </ul>
         </div>
 
@@ -79,25 +71,19 @@ export default function Footer() {
           <h3 className='text-lg font-bold mb-4'>Follow Us</h3>
           <div className='flex space-x-4'>
             <a
-              href='https://facebook.com'
+              href='https://www.facebook.com/profile.php?id=100082972220759'
               className='w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-green-500'
               aria-label='Facebook'>
               <FaFacebookF className='text-white' />
             </a>
             <a
-              href='https://twitter.com'
-              className='w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-green-500'
-              aria-label='Twitter'>
-              <FaTwitter className='text-white' />
-            </a>
-            <a
-              href='https://instagram.com'
+              href='https://www.instagram.com/gimmickmarketers/'
               className='w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-green-500'
               aria-label='Instagram'>
               <FaInstagram className='text-white' />
             </a>
             <a
-              href='https://linkedin.com'
+              href='https://www.linkedin.com/in/gimmick-marketers-100b3323b'
               className='w-10 h-10 flex items-center justify-center bg-gray-700 rounded-full hover:bg-green-500'
               aria-label='LinkedIn'>
               <FaLinkedinIn className='text-white' />
