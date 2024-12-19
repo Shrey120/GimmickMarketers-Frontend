@@ -12,6 +12,11 @@ import Services from "./pages/Services";
 import AboutUs from "./pages/AboutUs";
 import CampaignsPage from "./pages/Campaigns";
 import InfluencerPage from "./pages/Influencers";
+import AdminDashboard from "./admin/AdminDash";
+import AdminCampaigns from "./admin/AdminCampaign";
+import AdminCaseStudies from "./admin/AdminCaseStudy";
+import AdminBrands from "./admin/AdminBrand";
+import LoginPage from "./pages/Login";
 
 function App() {
   return (
@@ -25,6 +30,10 @@ function App() {
           <Route
             path='/'
             element={<Home />}
+          />
+          <Route
+            path='/login'
+            element={<LoginPage />}
           />
           <Route
             path='/brandsRegister'
@@ -54,6 +63,22 @@ function App() {
             path='/influencers'
             element={<InfluencerPage />}
           />
+          <Route
+            path='/admin'
+            element={<AdminDashboard />}>
+            <Route
+              path='campaigns'
+              element={<AdminCampaigns />}
+            />
+            <Route
+              path='caseStudies'
+              element={<AdminCaseStudies />}
+            />
+            <Route
+              path='brands'
+              element={<AdminBrands />}
+            />
+          </Route>
         </Routes>
       </Router>
       <div>

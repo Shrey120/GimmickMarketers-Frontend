@@ -67,7 +67,7 @@ export default function Header() {
         </Link>
         <Link
           className='w-full'
-          to='caseStudies'>
+          to='influencers'>
           <div
             className={`${
               isScrolled ? "text-white" : "text-black"
@@ -101,7 +101,7 @@ export default function Header() {
           <div
             className={`${
               isScrolled ? "text-white" : "text-black"
-            } text-sm xl:text-xl font-semibold change cursor-pointer transition-colors duration-50`}>
+            } text-sm xl:text-xl font-semibold change cursor-pointer hover:scale-105 transition-colors duration-30 `}>
             Campaigns
           </div>
         </Link>
@@ -186,8 +186,8 @@ export default function Header() {
             <div className='font-elecro text-lg font-semibold cursor-pointer change hover:border-r-4 hover:border-[#f200ff] transition-colors duration-50 '>
               <Link
                 to='campaigns'
-                className='w-full'>
-                Live Campaigns
+                className='w-full '>
+                Campaigns
               </Link>
             </div>
           </div>

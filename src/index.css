@@ -2,6 +2,29 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(156, 163, 175, 0.7);
+    /* Cool gray */
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(107, 114, 128, 0.9);
+    /* Hover state */
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: rgba(229, 231, 235, 0.5);
+    /* Light gray */
+  }
+}
+
 div {
   @apply w-full;
 }
@@ -67,7 +90,7 @@ code {
 }
 
 .change:hover {
-  color: #cc00ff;
+  color: #8c00bf;
 }
 
 @keyframes marquee {

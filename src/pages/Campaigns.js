@@ -27,7 +27,7 @@ const CampaignsPage = () => {
   }, []);
 
   return (
-    <div className='md:pt-28 pt-40 bg-gradient-to-br from-purple-100 via-white to-green-100 pb-16 px-16'>
+    <div className='pt-28 md:pt-40 bg-gradient-to-br from-purple-100 via-white to-green-100 pb-16 px-16'>
       <div className='max-w-7xl mx-auto'>
         {campaigns.length === 0 ? (
           <div className='flex pt-40 text-center w-full h-screen'>

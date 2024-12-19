@@ -56,7 +56,7 @@ const InfluencerPage = () => {
   };
 
   const filteredInfluencers = influencers.filter((influencer) =>
-    influencer.name.toLowerCase().includes(searchQuery.toLowerCase())
+    influencer.name.toLowerCase().startsWith(searchQuery.toLowerCase())
   );
 
   const getSortArrow = (field) => {

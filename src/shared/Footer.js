@@ -21,6 +21,13 @@ export default function Footer() {
           <ul className='space-y-2'>
             <li>
               <a
+                href='/login'
+                className='text-sm text-gray-400 hover:text-green-500'>
+                Login
+              </a>
+            </li>
+            <li>
+              <a
                 href='/about'
                 className='text-sm text-gray-400 hover:text-green-500'>
                 About
