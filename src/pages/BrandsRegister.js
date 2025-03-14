@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-
+import { useContextApi } from "../context/appContext";
 export default function BrandContact() {
+  const { regiterBrand } = useContextApi();
   const [formData, setFormData] = useState({
     brandName: "",
     businessEmail: "",
@@ -9,7 +10,6 @@ export default function BrandContact() {
     contactName: "",
     contactNumber: "",
     budget: "",
-    currency: "INR",
     campaignDetails: "",
   });
 
@@ -45,26 +45,12 @@ export default function BrandContact() {
     ) {
       toast.error("All fields are required!");
       return;
-    }
-
-    if (!validateEmail(businessEmail)) {
+    } else if (!validateEmail(businessEmail)) {
       toast.error("Invalid email format!");
       return;
+    } else {
+      regiterBrand(formData);
     }
-
-    // Successful Submission
-    toast.success("Form submitted successfully!");
-    console.log("Form Data:", formData);
-    setFormData({
-      brandName: "",
-      businessEmail: "",
-      businessWebsite: "",
-      contactName: "",
-      contactNumber: "",
-      budget: "",
-      currency: "INR",
-      campaignDetails: "",
-    });
   };
 
   return (
@@ -168,17 +154,11 @@ export default function BrandContact() {
               <label className='block text-sm font-medium text-gray-300'>
                 Currency
               </label>
-              <select
+              <div
                 name='currency'
-                value={formData.currency}
-                onChange={handleChange}
                 className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white focus:ring focus:ring-teal-500'>
-                <option value='INR'>₹ INR</option>
-                <option value='USD'>$ USD</option>
-                <option value='EUR'>€ EUR</option>
-                <option value='GBP'>£ GBP</option>
-                <option value='JPY'>¥ JPY</option>
-              </select>
+                ₹ INR
+              </div>
             </div>
           </div>
 

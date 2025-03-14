@@ -1,14 +1,18 @@
 import React, { useState } from "react";
 import { toast } from "react-toastify";
-
+import { useContextApi } from "../context/appContext";
 export default function BrandContact() {
+  const { registerInfluencer } = useContextApi();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    contact: "",
     city: "",
-    dob: "",
-    instagramUrl: "",
+    state: "",
+    instagramId: "",
+    followers: "",
     youtubeUrl: "",
+    subscribers: "",
     password: "",
   });
 
@@ -21,12 +25,32 @@ export default function BrandContact() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    const { name, email, city, dob, instagramUrl, password } = formData;
-
+    /* eslint-disable no-unused-vars */
+    const {
+      name,
+      email,
+      contact,
+      city,
+      state,
+      instagramId,
+      followers,
+      youtubeUrl,
+      subscribers,
+      password,
+    } = formData;
+    /* eslint-disable no-unused-vars */
     // Validation checks
-    if (!name || !email || !city || !dob || !instagramUrl || !password) {
-      toast.error("All fields are required except YouTube URL!");
+    if (
+      !name ||
+      !email ||
+      !contact ||
+      !city ||
+      !state ||
+      !instagramId ||
+      !followers ||
+      !password
+    ) {
+      toast.error("Please fill all the fields!");
       return;
     }
 
@@ -35,18 +59,8 @@ export default function BrandContact() {
       return;
     }
 
+    registerInfluencer(formData);
     // Successful Submission
-    toast.success("Form submitted successfully!");
-    console.log("Form Data:", formData);
-    setFormData({
-      name: "",
-      email: "",
-      city: "",
-      dob: "",
-      instagramUrl: "",
-      youtubeUrl: "",
-      password: "",
-    });
   };
 
   return (
@@ -90,14 +104,14 @@ export default function BrandContact() {
           <div className='mb-6 flex gap-4'>
             <div className='w-2/3'>
               <label className='block text-sm font-medium text-gray-300'>
-                City
+                State
               </label>
               <input
                 type='text'
-                name='city'
-                value={formData.city}
+                name='state'
+                value={formData.state}
                 onChange={handleChange}
-                placeholder='Enter your city'
+                placeholder='Enter your State'
                 className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
               />
             </div>
@@ -105,12 +119,13 @@ export default function BrandContact() {
             {/* DOB */}
             <div className='w-1/3'>
               <label className='block text-sm font-medium text-gray-300'>
-                Date of Birth
+                City
               </label>
               <input
-                type='date'
-                name='dob'
-                value={formData.dob}
+                type='text'
+                name='city'
+                value={formData.city}
+                placeholder='Enter your City'
                 onChange={handleChange}
                 className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
               />
@@ -120,14 +135,29 @@ export default function BrandContact() {
           {/* Instagram URL */}
           <div className='mb-6'>
             <label className='block text-sm font-medium text-gray-300'>
-              Instagram URL
+              Instagram ID
             </label>
             <input
-              type='url'
-              name='instagramUrl'
-              value={formData.instagramUrl}
+              type='text'
+              name='instagramId'
+              value={formData.instagramId}
               onChange={handleChange}
-              placeholder='Enter your Instagram profile URL'
+              placeholder='Enter your Instagram profile ID'
+              className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
+            />
+          </div>
+
+          {/* Followers */}
+          <div className='mb-6'>
+            <label className='block text-sm font-medium text-gray-300'>
+              Followers
+            </label>
+            <input
+              type='number'
+              name='followers'
+              value={formData.followers}
+              onChange={handleChange}
+              placeholder='Enter your followers count'
               className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
             />
           </div>
@@ -135,7 +165,7 @@ export default function BrandContact() {
           {/* YouTube Page (Optional) */}
           <div className='mb-6'>
             <label className='block text-sm font-medium text-gray-300'>
-              YouTube Page (Optional)
+              YouTube Page (Optional but for better opportunities)
             </label>
             <input
               type='url'
@@ -143,6 +173,21 @@ export default function BrandContact() {
               value={formData.youtubeUrl}
               onChange={handleChange}
               placeholder='Enter your YouTube channel URL (if any)'
+              className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
+            />
+          </div>
+
+          {/* Subscribers */}
+          <div className='mb-6'>
+            <label className='block text-sm font-medium text-gray-300'>
+              Subscribers (Optional but for better opportunities)
+            </label>
+            <input
+              type='number'
+              name='subscribers'
+              value={formData.subscribers}
+              onChange={handleChange}
+              placeholder='Enter your subscribers count'
               className='w-full mt-2 p-3 rounded-lg bg-gray-800/70 text-white placeholder-gray-400 focus:ring focus:ring-teal-500'
             />
           </div>

@@ -7,8 +7,11 @@ export default function HeroSection() {
       <div>
         <div className='font-space text-4xl lg:text-7xl font-extrabold'>
           <span className='hero-text hero-text-md'>
-            WE ARE YOUR{" "}
-            <span className='hero-text-tag-md hero-text-tag'>#influencer</span>{" "}
+            WE ARE YOUR
+            <span className='hero-text-tag-md hero-text-tag'>
+              {" "}
+              #influencer{" "}
+            </span>
             MARKETING SOLUTION
           </span>
         </div>

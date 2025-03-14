@@ -5,43 +5,43 @@ export default function HomeInfluencer() {
   const influencers = [
     {
       id: 1,
-      name: "Influencer 1",
-      genre: "Fashion",
+      name: "Aman Adhikari",
+      genre: "Coffee Enthusiast",
 
-      image: "/assets/Influencers/I1.jpg",
+      image: "/assets/I1.jpg",
     },
     {
       id: 2,
-      name: "Influencer 2",
-      genre: "Travel",
+      name: "Riddhima Pathak",
+      genre: "Journalist",
 
-      image: "/assets/Influencers/I1.jpg",
+      image: "/assets/I2.jpg",
     },
     {
       id: 3,
-      name: "Influencer 3",
-      genre: "Tech",
+      name: "Vivek Bindra",
+      genre: "Buisness Coach",
 
-      image: "/assets/Influencers/I1.jpg",
+      image: "/assets/I3.jpg",
     },
     {
       id: 4,
-      name: "Influencer 4",
-      genre: "Fitness",
+      name: "Kritika Khurana",
+      genre: "Fashion Blogger",
 
-      image: "/assets/Influencers/I1.jpg",
+      image: "/assets/I4.jpg",
     },
     {
       id: 5,
-      name: "Influencer 5",
-      genre: "Food",
-      image: "/assets/Influencers/I1.jpg",
+      name: "Niharika NM",
+      genre: "Lifestyle",
+      image: "/assets/I5.jpg",
     },
     {
       id: 6,
-      name: "Influencer 6",
-      genre: "Music",
-      image: "/assets/Influencers/I1.jpg",
+      name: "Karan Marwah",
+      genre: "Food",
+      image: "/assets/I6.jpg",
     },
   ];
 

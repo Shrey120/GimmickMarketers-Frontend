@@ -7,34 +7,33 @@ export default function HomeHowWeHelp() {
       description:
         "Leverage the power of authentic voices to amplify your brand.",
 
-      icon: "/assets/Influencers/I1.jpg",
+      icon: "/assets/Hwh-2.jpg",
     },
     {
       title: "Content Creation",
       description:
         "Deliver engaging and memorable content tailored for your audience.",
 
-      icon: "/assets/Influencers/I1.jpg",
+      icon: "/assets/Hwh-5.jpg",
     },
     {
       title: "Meme Marketing",
       description:
         "Infuse humor into your campaigns and spark viral connections.",
 
-      icon: "/assets/Influencers/I1.jpg",
+      icon: "/assets/Hwh-1.jpg",
     },
     {
-      title: "Digital Campaigns",
+      title: "Digital Marketing",
       description: "Run high-impact campaigns to maximize visibility and ROI.",
 
-      icon: "/assets/Influencers/I1.jpg",
+      icon: "/assets/Hwh-3.jpg",
     },
     {
       title: "Celebrity Collaborations",
       description:
         "Boost your credibility with endorsements from household names.",
-
-      icon: "/assets/Influencers/I1.jpg",
+      icon: "/assets/Hwh-4.jpg",
     },
   ];
 
